@@ -45,7 +45,7 @@ class IuguMerchant(base.IuguApi):
 
         return Token(token_data)
 
-    def create_charge(self, consumer_email, items, token=None, tokenid=None, payer=None):
+    def create_charge(self, consumer_email, items, token=None, tokenid=None, payer=None, months=1):
         """
         Creates an invoice and returns a direct charge done.
 
@@ -67,6 +67,8 @@ class IuguMerchant(base.IuguApi):
 
         if tokenid:
             data.append(("token", tokenid))
+            if months > 1:
+                data.append(("months", months))
         else:
             if token and isinstance(token, Token):
                 token_id = token.id
