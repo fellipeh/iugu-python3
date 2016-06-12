@@ -36,17 +36,23 @@ Quick Install
 -----
 ### Using pip ###
 ```
-pip install iugu-python
+pip3 install iugu-python3
 ```
 or
 ### Using setup.py ###
 ```
 # Downloading package master or release:
-# https://github.com/horacioibrahim/iugu-python/archive/master.zip
-# or https://github.com/horacioibrahim/iugu-python/releases
-unzip iugu-python-master.zip
-cd iugu-python-master
-python setup.py install
+# https://github.com/fellipeh/iugu-python3/archive/master.zip
+# or https://github.com/fellipeh/iugu-python3/releases
+unzip iugu-python3-master.zip
+cd iugu-python3-master
+python3 setup.py install
+```
+or
+### Clone the git ###
+```
+git clone https://github.com/fellipeh/iugu-python3
+pip3 install -e iugu_python3
 ```
 
 Usage (Quick Start)
